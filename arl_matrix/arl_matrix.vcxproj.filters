@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Others">
+      <UniqueIdentifier>{c4bb82ab-5fd7-42ed-9271-b27c28031acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Statistic">
+      <UniqueIdentifier>{957f3007-4037-4807-9d04-6db69fc67e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Statistic">
+      <UniqueIdentifier>{b4edff9c-3a19-44b3-8851-2d88c3d3d1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\AMath">
+      <UniqueIdentifier>{bcb078e1-a904-43fe-9de6-174d517e7d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\AMath">
+      <UniqueIdentifier>{8ec1c26c-d44d-43b7-9cc6-1bc1fda03af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Other">
+      <UniqueIdentifier>{29ce8fc2-d002-4834-b427-ba6ab4ba4dfd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="arl_matrix.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
+    <ClCompile Include="Algoritms.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
+    <ClCompile Include="complex.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
+    <ClCompile Include="plm.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="interpol.h">
+      <Filter>Файлы заголовков\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Algoritms.h">
+      <Filter>Файлы заголовков\AMath</Filter>
+    </ClInclude>
+    <ClInclude Include="complex.h">
+      <Filter>Файлы заголовков\AMath</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>Файлы заголовков\AMath</Filter>
+    </ClInclude>
+    <ClInclude Include="plm.h">
+      <Filter>Файлы заголовков\AMath</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
