@@ -66,6 +66,18 @@ int mat::init(int width,int height) {
 }
 ///
 // Other Functions
+int mat::transpositionLine(int y1, int y2, double** matrix,int width,int height) {//private
+	if (y2 >= height||y1>y2) {
+		return 0;
+	}
+	int buf;
+	for (int i = 0; i < width;i++) {
+		buf = matrix[i][y2];
+		matrix[i][y2] = matrix[i][y1];
+		matrix[i][y1] = buf;
+	}
+	return 1;
+}
 const bool mat::exists() {
 	return matrix;
 }
@@ -98,16 +110,13 @@ double mat::get_determinant() {
 	}
 	double* buf = new double[width];
 	// construct triagnle view 
-	for (int x = 0; x < width;x++) { 
-		if (((matrix_n[x][x]) == 0) && (x != (width - 1))) {
-			int i;
-		for (i = 0; i < width; i++) {
-				buf[i] = matrix[i][x];
-			}
-			for (i = 0; i < width; i++) {
-				matrix[i][x] = matrix[i][x - 1];;
-				matrix[i][x - 1] = buf[i];
-			}
+	int d;
+	for (int x = 0; x < width;x++) {
+		d = x;
+		while (matrix_n[d][d] == 0) { // Производим перестановку
+			transpositionLine(d,d+1,matrix_n,width,height);
+			otv *= -1;
+			d += 1;
 		}
 		otv *= matrix_n[x][x];         
 		for (int y = height-1; y > x; y--) {
@@ -144,8 +153,15 @@ mat mat::get_reverse_nw() {
 		}
 		}
 	double koef;
+	int d;
 		for (int x = 0; x < width; x++)
 		{
+			d = x;
+			while (matrix_n[d][d] == 0) { // Производим перестановку
+				transpositionLine(d, d + 1, matrix_n, width, height);
+				transpositionLine(d, d + 1, matrix_o, width, height);
+				d += 1;
+			}
 			for (int y = x+1; y < height; y++) {
 				koef = matrix_n[x][y] / matrix_n[x][x];
 				if (koef == INFINITY) {

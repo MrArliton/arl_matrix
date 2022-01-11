@@ -11,10 +11,12 @@ using namespace amath;
 int main()
 {
 	mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
-//	mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
+	mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
 //	std::cout << a << "\n" << b << "\n";
 //	mat x = a.get_reverse_nw()*b;
-	std::cout << a.get_determinant();
+	std::cout << a*a.get_reverse_nw() << "\n";
+	std::cout << a.get_determinant()<< "\n";
+	//std::cout << a.get_determinant();
 //	std::cout << x <<" " << "\n";
 	//double a[] = { 1,2,8 };
 	//double b[] = { 1,2,4 };

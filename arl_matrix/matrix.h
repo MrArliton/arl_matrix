@@ -12,7 +12,9 @@ namespace amath {
 		int height;
 		int init(int width, int height); // allocate memory
 		int free(double** m, int width, int height); // free memory
+		int transpositionLine(int x1, int x2, double** matrix,int width,int height);
 	public:
+
 		mat(int width, int height, bool zero);
 		mat(const char* path);
 		mat(double** matrix, int width, int weight);

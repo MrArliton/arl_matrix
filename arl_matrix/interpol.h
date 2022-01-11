@@ -64,7 +64,7 @@ double getFuntion(double arg,double * mw,double* sd,double kc) {
 }
 //
 void printAll() {
-	data d = getData("C:\\Users\\MrArl\\source\\repos_education\\Interpol\\dat.txt");
+	data d = getData("C:\\Users\\MrArl\\source\\repos_education\\Interpol\\dat.txt"); // Прописать путь до файлы статистики
 	double* mw = getMathematicWaiting(d);
 	printf_s("math waiting:%lf %lf\n",mw[0],mw[1]);
 	double* sd = getStandartDeviation(d, mw);
@@ -74,7 +74,7 @@ void printAll() {
 	printf_s("Argument for predicate:");
 	double arg;
 	scanf_s("%lf",&arg);
-	printf_s("Funtion value:%lf with arg:%lf\n", getFuntion(arg, mw, sd, cor), arg);
+	printf_s("Function value:%lf with arg:%lf\n", getFuntion(arg, mw, sd, cor), arg);
 }
 
 //
