@@ -12,7 +12,24 @@ namespace amath {
 		complex();
 
 		complex getCC(); // Complex conjuction
-
+		//Unary
+		complex& operator+=(complex cp) {
+			r += cp.r;
+			i += cp.i;
+			return *this;
+		}
+		complex& operator-=(complex cp) {
+			r -= cp.r;
+			i -= cp.i;
+			return *this;
+		}
+		complex& operator*=(complex cp) {
+			complex  buf = *this * cp;
+			this->r = buf.r;
+			this->i = buf.i;
+			return *this;
+		}
+		//binary
 		friend complex operator+(complex one, complex two) {
 			return complex(one.r + two.r, one.i + two.i);
 		}
@@ -30,11 +47,18 @@ namespace amath {
 				return complex((one*two.getCC())/(two*two.getCC()));
 			}
 		}
+		friend bool operator==(complex one, complex two) {
+			if (int(one.r*100000000000000) == int(two.r * 100000000000000) && int(one.i * 100000000000000) == int(two.i * 10000000000000)) {       ///////////// Исправить
+				return true;
+			}
+				return false;
+		}
+		
 		friend std::ostream& operator<<(std::ostream& out, complex two) {
-			out << two.r << "+i*" << two.i << "\n";
+			out << two.r << "+i*" << two.i;
 			return out;
 		}
-		void operator=(complex cd);
+		complex& operator=(complex cd);
 	};
 	
 }

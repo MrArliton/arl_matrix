@@ -1,21 +1,34 @@
 ﻿
 
 #include <iostream>
-#include "matrix.h"
+#include "mat_a.h"
 #include "Algoritms.h"
 #include "complex.h"
-#include "plm.h"
-//#include "interpol.h"
+
+
 using namespace amath;
-#include "interpol.h"
+
+
 int main()
 {
-	mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
-	mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
+	complex** ms = new complex*[2];
+	ms[0] = new complex[2];
+	ms[1] = new complex[2];
+	ms[0][0] = 0; ms[0][1] = 1;
+	ms[1][0] = 4; ms[1][1] = complex(3,2);
+
+	mat_a<complex> a1(ms,2,2);
+	std::cout << a1.get_determinant() << "\n";
+
+
+
+
+	//mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
+	//mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
 //	std::cout << a << "\n" << b << "\n";
 //	mat x = a.get_reverse_nw()*b;
-	std::cout << a*a.get_reverse_nw() << "\n";
-	std::cout << a.get_determinant()<< "\n";
+	//std::cout << a*a.get_reverse_nw() << "\n";
+	//std::cout << a.get_determinant()<< "\n";
 	//std::cout << a.get_determinant();
 //	std::cout << x <<" " << "\n";
 	//double a[] = { 1,2,8 };

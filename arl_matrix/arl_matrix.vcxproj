@@ -144,6 +144,7 @@
     <ClCompile Include="Algoritms.cpp" />
     <ClCompile Include="arl_matrix.cpp" />
     <ClCompile Include="complex.cpp" />
+    <ClCompile Include="mat_a.cpp" />
     <ClCompile Include="matrix.cpp" />
     <ClCompile Include="plm.cpp" />
   </ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="Algoritms.h" />
     <ClInclude Include="complex.h" />
     <ClInclude Include="interpol.h" />
+    <ClInclude Include="mat_a.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="plm.h" />
   </ItemGroup>

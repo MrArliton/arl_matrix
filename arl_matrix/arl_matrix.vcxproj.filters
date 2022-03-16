@@ -48,6 +48,9 @@
     <ClCompile Include="plm.cpp">
       <Filter>Исходные файлы\AMath</Filter>
     </ClCompile>
+    <ClCompile Include="mat_a.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interpol.h">
@@ -63,6 +66,9 @@
       <Filter>Файлы заголовков\AMath</Filter>
     </ClInclude>
     <ClInclude Include="plm.h">
+      <Filter>Файлы заголовков\AMath</Filter>
+    </ClInclude>
+    <ClInclude Include="mat_a.h">
       <Filter>Файлы заголовков\AMath</Filter>
     </ClInclude>
   </ItemGroup>
