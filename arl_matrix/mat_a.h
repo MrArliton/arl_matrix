@@ -76,7 +76,6 @@ namespace amath {
 			return mat_a<T>(mats, mt1.width, mt2.height);
 		}
 		friend std::ostream& operator<<(std::ostream& out, const mat_a<T>& matrix) {
-			out << matrix.width << " " << matrix.height << "\n";
 			if (matrix.matrix != 0) {
 				for (int y = 0; y < matrix.height; y++) {
 					for (int x = 0; x < matrix.width; x++) {

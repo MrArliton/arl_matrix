@@ -15,10 +15,14 @@ namespace amath {
 	public:
 		plm(const double* koefs, int degree); 
 		plm(const plm& copy);
+		plm(int number); // полином нулевой степени
 		plm();
 
 		// unary operators
-		bool operator=(const plm& pol1);
+		plm& operator=(const plm& pol1);
+		plm& operator+=(const plm& pol1);
+		plm& operator-=(const plm& pol1);
+		plm& operator*=(const plm& pol1);
 		// global operators
 		friend plm operator*(const plm& pol1,const plm& pol2) {
 			int mx, mn;
@@ -161,6 +165,7 @@ namespace amath {
 			}
 			return false;
 		}
+		
 		~plm();
 	};
 }

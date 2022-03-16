@@ -51,6 +51,9 @@
     <ClCompile Include="mat_a.cpp">
       <Filter>Исходные файлы\AMath</Filter>
     </ClCompile>
+    <ClCompile Include="mat_c_b.cpp">
+      <Filter>Исходные файлы\AMath</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="interpol.h">

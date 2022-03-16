@@ -146,6 +146,7 @@
     <ClCompile Include="complex.cpp" />
     <ClCompile Include="mat_a.cpp" />
     <ClCompile Include="matrix.cpp" />
+    <ClCompile Include="mat_c_b.cpp" />
     <ClCompile Include="plm.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -4,13 +4,14 @@
 #include "mat_a.h"
 #include "Algoritms.h"
 #include "complex.h"
-
+#include "plm.h"
 
 using namespace amath;
 
 
 int main()
 {
+	std::cout << "Complex\n";
 	complex** ms = new complex*[2];
 	ms[0] = new complex[2];
 	ms[1] = new complex[2];
@@ -18,10 +19,36 @@ int main()
 	ms[1][0] = 4; ms[1][1] = complex(3,2);
 
 	mat_a<complex> a1(ms,2,2);
+	std::cout << a1 << "\n";
 	std::cout << a1.get_determinant() << "\n";
-
-
-
+	std::cout << "Polimons" << "\n";
+	plm** pl = new plm*[2];
+	double a[3] = { 1,2,3 };
+	pl[0] = new plm[2];
+	pl[1] = new plm[2];
+	pl[0][0] = plm(a, 2);
+	pl[0][1] = plm(a, 2);
+	pl[1][0] = plm(a, 2);
+	pl[1][1] = plm(a, 2);
+	mat_a<plm> pls(pl,2,2);
+	plm** pl1 = new plm * [2];
+	double ad[3] = { 2,2,1 };
+	double ad2[3] = { 1,1,1 };
+	pl1[0] = new plm[2];
+	pl1[1] = new plm[2];
+	pl1[0][0] = plm(ad, 2);
+	pl1[0][1] = plm(ad, 2);
+	pl1[1][0] = plm(ad2, 2);
+	pl1[1][1] = plm(ad, 2);
+	mat_a<plm> pls1(pl1, 2, 2);
+	std::cout << "First" << "\n";
+	std::cout << pls << "\n";
+	std::cout << "Second" << "\n";
+	std::cout << pls1 << "\n";
+	std::cout << "Sum" << "\n";
+	std::cout << pls+pls1 << "\n";
+	std::cout << "Multiplication" << "\n";
+	std::cout << pls * pls1 << "\n";
 
 	//mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
 	//mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
