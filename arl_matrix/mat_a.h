@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include <complex.h>
 namespace amath {
 	template<typename T>
 	class mat_a

@@ -153,6 +153,7 @@
     <ClInclude Include="Algoritms.h" />
     <ClInclude Include="complex.h" />
     <ClInclude Include="interpol.h" />
+    <ClInclude Include="interpole.h" />
     <ClInclude Include="mat_a.h" />
     <ClInclude Include="matrix.h" />
     <ClInclude Include="plm.h" />

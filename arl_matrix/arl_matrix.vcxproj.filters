@@ -74,5 +74,8 @@
     <ClInclude Include="mat_a.h">
       <Filter>Файлы заголовков\AMath</Filter>
     </ClInclude>
+    <ClInclude Include="interpole.h">
+      <Filter>Файлы заголовков\Other</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

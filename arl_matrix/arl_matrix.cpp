@@ -5,13 +5,16 @@
 #include "Algoritms.h"
 #include "complex.h"
 #include "plm.h"
-
+#include "interpole.h"
 using namespace amath;
 
 
 int main()
 {
-	std::cout << "Complex\n";
+	printAll();
+	
+}
+/*std::cout << "Complex\n";
 	complex** ms = new complex*[2];
 	ms[0] = new complex[2];
 	ms[1] = new complex[2];
@@ -49,8 +52,9 @@ int main()
 	std::cout << pls+pls1 << "\n";
 	std::cout << "Multiplication" << "\n";
 	std::cout << pls * pls1 << "\n";
+	*/
 
-	//mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
+//mat a("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix1.txt");
 	//mat b("C:\\Users\\MrArl\\source\\repos_education\\TestEducation\\Files\\matrix2.txt");
 //	std::cout << a << "\n" << b << "\n";
 //	mat x = a.get_reverse_nw()*b;
@@ -88,9 +92,8 @@ int main()
 //	printAll();
 //	std::cout << amath::cos(10) << "\n";
 	//amath::mergeSort(a, 0, 3, 1);
-	
+
 	//for(int i = 0;i<4;i++){
 //		std::cout << a[i] << " ";
 //	}
 
-}
